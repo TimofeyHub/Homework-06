@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    About
+{% endblock %}
+{% block body %}
+    <h1>Домашнее задание "Веб-приложение на Flask"</h1>
+    <h2>Задача:</h2>
+    <ol>
+        <li>Cкопируйте папку `homework_05` для этой домашки (
+            <a href="https://github.com/OtusTeam/BasePython/tree/homeworks-new">Памятка</a>
+                )
+        </li>
+        <li>Используйте следующие пакеты:
+            <ul>
+                <li>Flask</li>
+            </ul>
+        </li>
+        <li>В модуле `app` создайте базовое приложение на Flask</li>
+        <li>Создайте index view `/`
+        <li>Добавьте страницу `/about/`, добавьте туда текст</li>
+        <li>Создайте базовый шаблон (используйте
+            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template)">getbootstrap</a>
+            )
+        </li>
+        <li>В базовый шаблон подключите статику Bootstrap 5 (подключите стили), примените стили Bootstrap</li>
+        <li>В базовый шаблон добавьте навигационную панель
+            <a href="https://getbootstrap.com/docs/5.0/components/navbar/">`nav`</a>
+        </li>
+        <li>В навигационную панель добавьте ссылки на главную страницу `/` и на страницу `/about/` при помощи
+            `url_for`
+        </li>
+        <li>Добавьте новые зависимости в файл `requirements.txt` в корне проекта (лучше вручную, но можно командой `pip
+            freeze > requirements.txt`, тогда обязательно проверьте, что туда попало, и удалите лишнее)
+        </li>
+    </ol>
+    <h2>Критерии оценки</h2>
+    <ol>
+        <li>Создано Flask приложение в `app.py`
+        <li>Добавлены вьюшки `/` и `/about/`</li>
+        <li>Подключены и применены стили Bootstrap</li>
+        <li>В базовый шаблон добавлена навигационная панель</li>
+        <li>Автоматический тест `test_homework_05` проходит</li>
+    </ol>
+{% endblock %}
